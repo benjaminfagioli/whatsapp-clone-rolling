@@ -5,6 +5,7 @@
   --countcolor: #00a884;
   --textcolor: #e9edef;
   --secondtextcolor: #868979;
+  font-family: sans-serif;
 }
 body {
   background-color: var(--dark);
@@ -18,8 +19,8 @@ body {
 }
 .profile-pic {
   border-radius: 50%;
-  width: 2.5em;
-  aspect-ratio: 1;
+  width: 3em;
+  height: 3em;
 }
 
 header {
@@ -28,6 +29,10 @@ header {
   justify-content: space-between;
   background-color: var(--gray);
   padding: 0.8em;
+  .profile-pic {
+    width: 2.5em;
+    height: 2.5em;
+  }
   & ul {
     display: flex;
     list-style: none;
@@ -62,6 +67,7 @@ header {
     }
   }
   & input {
+    order: 1;
     color: var(--textcolor);
     padding: 0.3em 0.5em;
     width: 100%;
@@ -78,5 +84,101 @@ header {
 
   & > section:nth-child(2) {
     display: flex;
+  }
+}
+#chats {
+  display: flex;
+  flex-direction: column;
+}
+.chat {
+  padding: 0.7em 0.9em;
+  display: flex;
+  gap: 1em;
+  width: 100%;
+  flex-grow: 1;
+  justify-content: space-between;
+  transition: background-color 0.3s;
+  .chat-text {
+    flex-grow: 1;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.2em;
+    & h2 {
+      font-weight: 400;
+      font-size: 1em;
+    }
+    & h3 {
+      font-weight: 100;
+      color: var(--secondtextcolor);
+      font-size: 0.9em;
+      &.newmessage {
+        color: var(--textcolor);
+      }
+    }
+  }
+  .chat-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.2em;
+    .chat-time {
+      font-size: 0.8em;
+      &.newmessage {
+        color: var(--countcolor);
+      }
+    }
+    .chat-buble {
+      font-size: 0.9em;
+      padding: 0.08em;
+      aspect-ratio: 1;
+      text-align: center;
+      border-radius: 50%;
+      background-color: var(--countcolor);
+      align-self: center;
+      color: var(--dark);
+    }
+  }
+  &:hover {
+    background-color: var(--gray);
+  }
+}
+.arrow-back-svg {
+  display: none;
+  transition: all 1s;
+  & path {
+    fill: var(--countcolor) !important;
+  }
+}
+.input:focus ~ label .arrow-back-svg {
+  display: block;
+  animation: fadeinarrow forwards 0.5s;
+}
+.input:focus ~ label .search-svg {
+  display: none;
+}
+.input:not(:focus) ~ label .search-svg {
+  animation: fadeinsearch forwards 0.3s;
+}
+
+@keyframes fadeinarrow {
+  from {
+    opacity: 0;
+    transform: rotate(-90deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotate(0);
+  }
+}
+@keyframes fadeinsearch {
+  from {
+    opacity: 0;
+    transform: rotate(100deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotate(0);
   }
 }
