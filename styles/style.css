@@ -219,7 +219,7 @@ aside {
 main {
   background-color: var(--gray);
   grid-area: main;
-  min-height: calc(100vh - 60px);
+  height: calc(100vh - 60px);
 }
 
 nav {
@@ -231,26 +231,35 @@ nav {
 #app {
   max-width: 100vw;
   display: grid;
-  grid-template-columns: 40% 1fr;
+  grid-template-columns: 35% 1fr;
   grid-template-rows: 60px 1fr;
   grid-template-areas:
     "header nav"
     "aside main";
 }
 #download-wp {
+  user-select: none;
   padding: 3em;
+  padding-bottom: 0;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  gap: 1em;
+  align-items: center;
+  max-width: 70%;
+  margin: 0 auto;
+  /* font-size: 0.7em; */
 
   & h1 {
-    font-weight: 100;
     font-size: 2em;
   }
   & h2 {
+    color: var(--secondtextcolor);
     font-size: 1em;
   }
   & h1,
   & h2 {
+    font-weight: 100;
     text-align: center;
   }
   & a {
@@ -259,13 +268,20 @@ nav {
     border-radius: 5em;
     margin: 1em auto;
     padding: 0.8em 1em;
+    text-align: center;
     color: var(--gray);
   }
   & figure {
-    max-width: 100%;
+    max-width: 25em;
     & img {
       width: 100%;
       height: 100%;
     }
+  }
+}
+@media screen and (width<=990px) {
+  #download-wp {
+    padding: 0;
+    font-size: 0.7em;
   }
 }
