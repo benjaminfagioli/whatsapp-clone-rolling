@@ -19,8 +19,18 @@ body {
 }
 .profile-pic {
   border-radius: 50%;
+  overflow: hidden;
   width: 3em;
   height: 3em;
+  background: url("/img/default_user.svg.png");
+  background-color: #fff;
+  background-position: center;
+  background-size: cover;
+  & img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 header {
@@ -29,6 +39,7 @@ header {
   justify-content: space-between;
   background-color: var(--gray);
   padding: 0.8em;
+  grid-area: header;
   .profile-pic {
     width: 2.5em;
     height: 2.5em;
@@ -37,6 +48,9 @@ header {
     display: flex;
     list-style: none;
     gap: 0.9em;
+    & li {
+      cursor: pointer;
+    }
     & svg {
       width: 24px;
     }
@@ -91,13 +105,14 @@ header {
   flex-direction: column;
 }
 .chat {
+  cursor: pointer;
   padding: 0.7em 0.9em;
   display: flex;
   gap: 1em;
   width: 100%;
   flex-grow: 1;
   justify-content: space-between;
-  transition: background-color 0.3s;
+  transition: background-color 0.2s;
   .chat-text {
     flex-grow: 1;
     display: flex;
@@ -105,6 +120,8 @@ header {
     justify-content: center;
     flex-direction: column;
     gap: 0.2em;
+    width: 50%;
+
     & h2 {
       font-weight: 400;
       font-size: 1em;
@@ -121,8 +138,8 @@ header {
   .chat-info {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 0.2em;
+    justify-content: start;
+    gap: 0.4em;
     .chat-time {
       font-size: 0.8em;
       &.newmessage {
@@ -138,6 +155,19 @@ header {
       background-color: var(--countcolor);
       align-self: center;
       color: var(--dark);
+    }
+  }
+  .message {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    & p {
+      width: 99%;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
     }
   }
   &:hover {
@@ -180,5 +210,62 @@ header {
   to {
     opacity: 1;
     transform: rotate(0);
+  }
+}
+
+aside {
+  grid-area: aside;
+}
+main {
+  background-color: var(--gray);
+  grid-area: main;
+  min-height: calc(100vh - 60px);
+}
+
+nav {
+  background-color: var(--gray);
+  padding: 1em;
+  grid-area: nav;
+  box-shadow: 0 0 10px 2px var(--dark);
+}
+#app {
+  max-width: 100vw;
+  display: grid;
+  grid-template-columns: 40% 1fr;
+  grid-template-rows: 60px 1fr;
+  grid-template-areas:
+    "header nav"
+    "aside main";
+}
+#download-wp {
+  padding: 3em;
+  display: flex;
+  flex-direction: column;
+
+  & h1 {
+    font-weight: 100;
+    font-size: 2em;
+  }
+  & h2 {
+    font-size: 1em;
+  }
+  & h1,
+  & h2 {
+    text-align: center;
+  }
+  & a {
+    background-color: var(--countcolor);
+    text-decoration: none;
+    border-radius: 5em;
+    margin: 1em auto;
+    padding: 0.8em 1em;
+    color: var(--gray);
+  }
+  & figure {
+    max-width: 100%;
+    & img {
+      width: 100%;
+      height: 100%;
+    }
   }
 }
