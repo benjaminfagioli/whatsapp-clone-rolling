@@ -156,6 +156,7 @@ header {
     justify-content: start;
     gap: 0.4em;
     .chat-time {
+      color: var(--secondtextcolor);
       font-size: 0.8em;
       &.newmessage {
         color: var(--countcolor);
