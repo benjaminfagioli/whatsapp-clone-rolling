@@ -8,11 +8,14 @@
     <link rel="icon" href="./img/icon.png" />
   </head>
   <body>
-    <div id="app">
+    <section id="app">
       <header>
-        <figure class="profile-pic">
-          <img src="./img/profile-pic.jpg" alt="" />
-        </figure>
+        <a href="#">
+          <figure class="profile-pic">
+            <img src="./img/profile-pic.jpg" alt="" />
+          </figure>
+        </a>
+
         <ul>
           <li>
             <svg
@@ -138,7 +141,73 @@
           </li>
         </ul>
       </header>
-      <nav></nav>
+      <nav>
+        <section>
+          <figure class="profile-pic"></figure>
+          <h3>Pedro Facultad</h3>
+        </section>
+        <ul>
+          <li>
+            <svg
+              class="video-call"
+              viewBox="0 0 24 24"
+              height="24"
+              width="24"
+              preserveAspectRatio="xMidYMid meet"
+              class=""
+              fill="none"
+            >
+              <title>video-call</title>
+              <path
+                d="M3.27096 7.31042C3 7.82381 3 8.49587 3 9.84V14.16C3 15.5041 3 16.1762 3.27096 16.6896C3.5093 17.1412 3.88961 17.5083 4.35738 17.7384C4.88916 18 5.58531 18 6.9776 18H13.1097C14.502 18 15.1982 18 15.7299 17.7384C16.1977 17.5083 16.578 17.1412 16.8164 16.6896C17.0873 16.1762 17.0873 15.5041 17.0873 14.16V9.84C17.0873 8.49587 17.0873 7.82381 16.8164 7.31042C16.578 6.85883 16.1977 6.49168 15.7299 6.26158C15.1982 6 14.502 6 13.1097 6H6.9776C5.58531 6 4.88916 6 4.35738 6.26158C3.88961 6.49168 3.5093 6.85883 3.27096 7.31042Z"
+                fill="currentColor"
+              ></path>
+              <path
+                d="M18.7308 9.60844C18.5601 9.75994 18.4629 9.97355 18.4629 10.1974V13.8026C18.4629 14.0264 18.5601 14.2401 18.7308 14.3916L20.9567 16.3669C21.4879 16.8384 22.3462 16.4746 22.3462 15.778V8.22203C22.3462 7.52542 21.4879 7.16163 20.9567 7.63306L18.7308 9.60844Z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </li>
+          <li>
+            <svg
+              viewBox="0 0 24 24"
+              height="24"
+              width="24"
+              preserveAspectRatio="xMidYMid meet"
+              class=""
+              version="1.1"
+              x="0px"
+              y="0px"
+              enable-background="new 0 0 24 24"
+            >
+              <title>search</title>
+              <path
+                fill="currentColor"
+                d="M15.009,13.805h-0.636l-0.22-0.219c0.781-0.911,1.256-2.092,1.256-3.386 c0-2.876-2.332-5.207-5.207-5.207c-2.876,0-5.208,2.331-5.208,5.207s2.331,5.208,5.208,5.208c1.293,0,2.474-0.474,3.385-1.255 l0.221,0.22v0.635l4.004,3.999l1.194-1.195L15.009,13.805z M10.201,13.805c-1.991,0-3.605-1.614-3.605-3.605 s1.614-3.605,3.605-3.605s3.605,1.614,3.605,3.605S12.192,13.805,10.201,13.805z"
+              ></path>
+            </svg>
+          </li>
+          <li>
+            <svg
+              viewBox="0 0 24 24"
+              height="24"
+              width="24"
+              preserveAspectRatio="xMidYMid meet"
+              class=""
+              version="1.1"
+              x="0px"
+              y="0px"
+              enable-background="new 0 0 24 24"
+            >
+              <title>menu</title>
+              <path
+                fill="currentColor"
+                d="M12,7c1.104,0,2-0.896,2-2c0-1.105-0.895-2-2-2c-1.104,0-2,0.894-2,2 C10,6.105,10.895,7,12,7z M12,9c-1.104,0-2,0.894-2,2c0,1.104,0.895,2,2,2c1.104,0,2-0.896,2-2C13.999,9.895,13.104,9,12,9z M12,15 c-1.104,0-2,0.894-2,2c0,1.104,0.895,2,2,2c1.104,0,2-0.896,2-2C13.999,15.894,13.104,15,12,15z"
+              ></path>
+            </svg>
+          </li>
+        </ul>
+      </nav>
       <aside>
         <section id="navigation">
           <section id="input-search-container">
@@ -209,18 +278,101 @@
           </section>
         </section>
         <section id="chats">
+          <a href="#app">
+            <article class="chat">
+              <section class="chat-img">
+                <figure class="profile-pic"></figure>
+              </section>
+              <section class="chat-text">
+                <h2>Pedro facultad</h2>
+                <h3 class="message">
+                  <svg
+                    viewBox="0 0 18 18"
+                    height="18"
+                    width="18"
+                    preserveAspectRatio="xMidYMid meet"
+                    class=""
+                    version="1.1"
+                    x="0px"
+                    y="0px"
+                    enable-background="new 0 0 18 18"
+                  >
+                    <title>status-dblcheck</title>
+                    <path
+                      fill="currentColor"
+                      d="M17.394,5.035l-0.57-0.444c-0.188-0.147-0.462-0.113-0.609,0.076l-6.39,8.198 c-0.147,0.188-0.406,0.206-0.577,0.039l-0.427-0.388c-0.171-0.167-0.431-0.15-0.578,0.038L7.792,13.13 c-0.147,0.188-0.128,0.478,0.043,0.645l1.575,1.51c0.171,0.167,0.43,0.149,0.577-0.039l7.483-9.602 C17.616,5.456,17.582,5.182,17.394,5.035z M12.502,5.035l-0.57-0.444c-0.188-0.147-0.462-0.113-0.609,0.076l-6.39,8.198 c-0.147,0.188-0.406,0.206-0.577,0.039l-2.614-2.556c-0.171-0.167-0.447-0.164-0.614,0.007l-0.505,0.516 c-0.167,0.171-0.164,0.447,0.007,0.614l3.887,3.8c0.171,0.167,0.43,0.149,0.577-0.039l7.483-9.602 C12.724,5.456,12.69,5.182,12.502,5.035z"
+                    ></path>
+                  </svg>
+                  <p>Tú: Sisi de diez</p>
+                </h3>
+              </section>
+              <section class="chat-info">
+                <p class="chat-time">15:55</p>
+              </section>
+            </article>
+          </a>
           <article class="chat">
             <section class="chat-img">
               <figure class="profile-pic">
-                <!-- <img src="/img/" alt="" /> -->
+                <img src="/img/x-logo.png" alt="" />
               </figure>
             </section>
             <section class="chat-text">
               <h2>Elon Musk</h2>
-              <h3 class="message newmessage">Hola amigo!</h3>
+              <h3 class="message newmessage">Confirmame para hoy</h3>
             </section>
             <section class="chat-info">
               <p class="chat-time newmessage">14:02</p>
+              <p class="chat-buble">1</p>
+            </section>
+          </article>
+          <article class="chat">
+            <section class="chat-img">
+              <figure class="profile-pic">
+                <img src="/img/batman.jpg" alt="" />
+              </figure>
+            </section>
+            <section class="chat-text">
+              <h2>Batman</h2>
+              <h3 class="message">
+                <svg
+                  viewBox="0 0 18 18"
+                  height="18"
+                  width="18"
+                  preserveAspectRatio="xMidYMid meet"
+                  class=""
+                  version="1.1"
+                  x="0px"
+                  y="0px"
+                  enable-background="new 0 0 18 18"
+                >
+                  <title>status-dblcheck</title>
+                  <path
+                    fill="currentColor"
+                    d="M17.394,5.035l-0.57-0.444c-0.188-0.147-0.462-0.113-0.609,0.076l-6.39,8.198 c-0.147,0.188-0.406,0.206-0.577,0.039l-0.427-0.388c-0.171-0.167-0.431-0.15-0.578,0.038L7.792,13.13 c-0.147,0.188-0.128,0.478,0.043,0.645l1.575,1.51c0.171,0.167,0.43,0.149,0.577-0.039l7.483-9.602 C17.616,5.456,17.582,5.182,17.394,5.035z M12.502,5.035l-0.57-0.444c-0.188-0.147-0.462-0.113-0.609,0.076l-6.39,8.198 c-0.147,0.188-0.406,0.206-0.577,0.039l-2.614-2.556c-0.171-0.167-0.447-0.164-0.614,0.007l-0.505,0.516 c-0.167,0.171-0.164,0.447,0.007,0.614l3.887,3.8c0.171,0.167,0.43,0.149,0.577-0.039l7.483-9.602 C12.724,5.456,12.69,5.182,12.502,5.035z"
+                  ></path>
+                </svg>
+                <p>Tú: Perdón amigo hoy no voy a poder</p>
+              </h3>
+            </section>
+            <section class="chat-info">
+              <p class="chat-time">11:45</p>
+            </section>
+          </article>
+          <article class="chat">
+            <section class="chat-img">
+              <figure class="profile-pic">
+                <img src="/img/abuela.jpeg" alt="" />
+              </figure>
+            </section>
+            <section class="chat-text">
+              <h2>Abuela</h2>
+              <h3 class="message newmessage">
+                <p>Qué te dijo Batman?</p>
+              </h3>
+            </section>
+            <section class="chat-info">
+              <p class="chat-time newmessage">11:21</p>
               <p class="chat-buble">1</p>
             </section>
           </article>
@@ -250,7 +402,7 @@
                     d="M17.394,5.035l-0.57-0.444c-0.188-0.147-0.462-0.113-0.609,0.076l-6.39,8.198 c-0.147,0.188-0.406,0.206-0.577,0.039l-0.427-0.388c-0.171-0.167-0.431-0.15-0.578,0.038L7.792,13.13 c-0.147,0.188-0.128,0.478,0.043,0.645l1.575,1.51c0.171,0.167,0.43,0.149,0.577-0.039l7.483-9.602 C17.616,5.456,17.582,5.182,17.394,5.035z M12.502,5.035l-0.57-0.444c-0.188-0.147-0.462-0.113-0.609,0.076l-6.39,8.198 c-0.147,0.188-0.406,0.206-0.577,0.039l-2.614-2.556c-0.171-0.167-0.447-0.164-0.614,0.007l-0.505,0.516 c-0.167,0.171-0.164,0.447,0.007,0.614l3.887,3.8c0.171,0.167,0.43,0.149,0.577-0.039l7.483-9.602 C12.724,5.456,12.69,5.182,12.502,5.035z"
                   ></path>
                 </svg>
-                <p>Tú: Te aviso para el ft de la semana que viene</p>
+                <p>Tú: Perdóname me olvide</p>
               </h3>
             </section>
             <section class="chat-info">
@@ -260,20 +412,135 @@
         </section>
       </aside>
       <main>
-        <section id="download-wp">
-          <figure>
-            <img src="/img/download-wp.png" alt="" />
-          </figure>
-          <h1>Descarga WhatsApp para Windows</h1>
-          <h2>
-            Descarga la aplicación para Windows y haz lamadas, comparte pantala
-            y disfruta de una experiencia más rápida.
-          </h2>
-          <a role="button" href="https://web.whatsapp.com/" target="_blank"
-            >Descargar de Microsoft Store</a
-          >
+        <section id="initial-view">
+          <section id="download-wp">
+            <figure>
+              <img src="/img/download-wp.png" alt="" />
+            </figure>
+            <h1>Descarga WhatsApp para Windows</h1>
+            <h2>
+              Descarga la aplicación para Windows y haz lamadas, comparte
+              pantala y disfruta de una experiencia más rápida.
+            </h2>
+            <a
+              role="button"
+              href="https://apps.microsoft.com/detail/9nksqgp7f2nh?hl=es-es&gl=ES"
+              target="_blank"
+              >Descargar de Microsoft Store</a
+            >
+          </section>
+          <section id="cifrate-section">
+            <p>
+              <svg
+                viewBox="0 0 10 12"
+                height="12"
+                width="10"
+                preserveAspectRatio="xMidYMid meet"
+                class=""
+                version="1.1"
+              >
+                <title>lock-small</title>
+                <path
+                  d="M5.00847986,1.6 C6.38255462,1.6 7.50937014,2.67435859 7.5940156,4.02703389 L7.59911976,4.1906399 L7.599,5.462 L7.75719976,5.46214385 C8.34167974,5.46214385 8.81591972,5.94158383 8.81591972,6.53126381 L8.81591972,9.8834238 C8.81591972,10.4731038 8.34167974,10.9525438 7.75719976,10.9525438 L2.25767996,10.9525438 C1.67527998,10.9525438 1.2,10.4731038 1.2,9.8834238 L1.2,6.53126381 C1.2,5.94158383 1.67423998,5.46214385 2.25767996,5.46214385 L2.416,5.462 L2.41679995,4.1906399 C2.41679995,2.81636129 3.49135449,1.68973395 4.84478101,1.60510326 L5.00847986,1.6 Z M5.00847986,2.84799995 C4.31163824,2.84799995 3.73624912,3.38200845 3.6709675,4.06160439 L3.6647999,4.1906399 L3.663,5.462 L6.35,5.462 L6.35111981,4.1906399 C6.35111981,3.53817142 5.88169076,2.99180999 5.26310845,2.87228506 L5.13749818,2.85416626 L5.00847986,2.84799995 Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+              Tus mensajes personales están cifrados de extremo a extremo
+            </p>
+          </section>
+        </section>
+
+        <section id="chat-section">
+          <section id="chat">
+            <h4 id="chat-date">HOY</h4>
+            <article class="msg-group their">
+              <p class="message">Holaa</p>
+              <p class="message">
+                Tendrias el ejercicio 41 del tp de vectores?
+              </p>
+            </article>
+            <article class="msg-group mine">
+              <p>Holaa, mirá ahí te paso</p>
+              <figure class="message-figure">
+                <img src="/img/ejercicio.jpeg" alt="" />
+              </figure>
+              <p>Ahi está, asi pude resolverlo yo</p>
+            </article>
+            <article class="msg-group their">
+              <p>Muchisimas gracias de verdad</p>
+              <figure class="message-figure">
+                <img src="/img/ejercicio2.jpeg" alt="" />
+              </figure>
+              <p>Así me quedó</p>
+              <p>Está bien??</p>
+            </article>
+            <article class="msg-group mine">
+              <p>Sisi de diez</p>
+            </article>
+          </section>
         </section>
       </main>
-    </div>
+      <footer id="msg-bar">
+        <svg
+          viewBox="0 0 24 24"
+          height="24"
+          width="24"
+          preserveAspectRatio="xMidYMid meet"
+          class=""
+          fill="none"
+        >
+          <title>attach-menu-plus</title>
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M20.5 13.2501L20.5 10.7501L13.25 10.7501L13.25 3.5L10.75 3.5L10.75 10.7501L3.5 10.7501L3.5 13.2501L10.75 13.2501L10.75 20.5L13.25 20.5L13.25 13.2501L20.5 13.2501Z"
+            fill="currentColor"
+          ></path>
+        </svg>
+        <section>
+          <label for="text-message">
+            <svg
+              viewBox="0 0 24 24"
+              height="24"
+              width="24"
+              preserveAspectRatio="xMidYMid meet"
+              class=""
+              version="1.1"
+              x="0px"
+              y="0px"
+              enable-background="new 0 0 24 24"
+            >
+              <title>smiley</title>
+              <path
+                fill="currentColor"
+                d="M9.153,11.603c0.795,0,1.439-0.879,1.439-1.962S9.948,7.679,9.153,7.679 S7.714,8.558,7.714,9.641S8.358,11.603,9.153,11.603z M5.949,12.965c-0.026-0.307-0.131,5.218,6.063,5.551 c6.066-0.25,6.066-5.551,6.066-5.551C12,14.381,5.949,12.965,5.949,12.965z M17.312,14.073c0,0-0.669,1.959-5.051,1.959 c-3.505,0-5.388-1.164-5.607-1.959C6.654,14.073,12.566,15.128,17.312,14.073z M11.804,1.011c-6.195,0-10.826,5.022-10.826,11.217 s4.826,10.761,11.021,10.761S23.02,18.423,23.02,12.228C23.021,6.033,17.999,1.011,11.804,1.011z M12,21.354 c-5.273,0-9.381-3.886-9.381-9.159s3.942-9.548,9.215-9.548s9.548,4.275,9.548,9.548C21.381,17.467,17.273,21.354,12,21.354z  M15.108,11.603c0.795,0,1.439-0.879,1.439-1.962s-0.644-1.962-1.439-1.962s-1.439,0.879-1.439,1.962S14.313,11.603,15.108,11.603z"
+              ></path>
+            </svg>
+          </label>
+          <input
+            type="text"
+            id="text-message"
+            placeholder="Escribe un mensaje"
+          />
+        </section>
+        <svg
+          viewBox="0 0 24 24"
+          height="24"
+          width="24"
+          preserveAspectRatio="xMidYMid meet"
+          class=""
+          version="1.1"
+          x="0px"
+          y="0px"
+          enable-background="new 0 0 24 24"
+        >
+          <title>ptt</title>
+          <path
+            fill="currentColor"
+            d="M11.999,14.942c2.001,0,3.531-1.53,3.531-3.531V4.35c0-2.001-1.53-3.531-3.531-3.531 S8.469,2.35,8.469,4.35v7.061C8.469,13.412,9.999,14.942,11.999,14.942z M18.237,11.412c0,3.531-2.942,6.002-6.237,6.002 s-6.237-2.471-6.237-6.002H3.761c0,4.001,3.178,7.297,7.061,7.885v3.884h2.354v-3.884c3.884-0.588,7.061-3.884,7.061-7.885 L18.237,11.412z"
+          ></path>
+        </svg>
+      </footer>
+    </section>
   </body>
 </html>
